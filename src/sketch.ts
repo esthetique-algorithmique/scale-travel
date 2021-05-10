@@ -55,9 +55,9 @@ function makeRequest(){
         let da = TWO_PI / (24*60); //MH - not sure why these values are used (1440 = 360*4)
         angle += da;
         //z = z.map(el=>el+random(-.2,.2));
-        //if (angle <= TWO_PI) { //once we have traversed all pixels, generated a new image
+        if (frameNB < 50) { //once we have traversed all pixels, generated a new image
             setTimeout(makeRequest, 200);
-          //}
+        }
         
     });
 }

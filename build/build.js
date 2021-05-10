@@ -32,7 +32,9 @@ function makeRequest() {
         frameNB++;
         var da = TWO_PI / (24 * 60);
         angle += da;
-        setTimeout(makeRequest, 200);
+        if (frameNB < 50) {
+            setTimeout(makeRequest, 200);
+        }
     });
 }
 function setup() {
