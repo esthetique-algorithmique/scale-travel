@@ -42,7 +42,7 @@ function make_request() {
         img = createImg(image);
         img.hide();
 
-        // p5.prototype.downloadFile(image, "butterfly" + frameNB.toString(), "png");
+        p5.prototype.downloadFile(image, "butterfly" + frameNB.toString(), "png");
         frameNB++;
         if (frameNB < 50) {
             // setTimeout(make_request, 200);
